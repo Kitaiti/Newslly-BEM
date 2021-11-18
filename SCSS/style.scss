@@ -1,1 +1,196 @@
 @charset "utf-8";
+$color-text: #a6adb4;
+$color-heading: #202124;
+$color-gray: #f6f8f9;
+$color-accent: #fa6980;
+
+@mixin inner($w: 800px) {
+  margin: 0 auto;
+  max-width: $w;
+  width: 90%;
+}
+
+@mixin flex($j: space-between, $a: center) {
+  align-items: $a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: $j;
+}
+
+
+
+body {
+  color: $color-text;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: (24/14); //font-size/行間
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+// BLOCK----------------
+// header
+.header {
+  margin: 30px 0 60px;
+
+  &__inner {
+    @include inner();
+    @include flex();
+  }
+}
+
+.g-nav {
+  margin-right: -20px;
+  width: 34.5%;
+  &__link {
+    color: $color-text;
+    display: block;
+    text-decoration: none;
+  }
+
+  &__list {
+    @include flex();
+  }
+}
+
+
+
+.title-main {
+  border-bottom: 1px solid #ebeded;
+  color: $color-heading;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+// news
+.news {
+  &__inner {
+    @include inner();
+  }
+
+  &__list {
+    @include flex();
+  }
+}
+
+.page {
+  margin-bottom: 60px;
+  width: 47.5%;
+
+  &__category {
+    color: $color-accent;
+    font-size: 12px;
+  }
+
+  &__subtitle {
+    color: $color-heading;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    width: 100%;
+  }
+
+  &__time {
+    margin-right: 10px;
+  }
+
+  &__btn {
+    margin-right: auto;
+    margin-top: 30px;
+  }
+}
+
+
+
+// trending
+
+.trending {
+  background-color: $color-gray;
+  padding: 60px 0;
+
+  &__inner {
+    @include inner();
+  }
+
+  &__list {
+    @include flex();
+  }
+
+  &__item {
+    width: 47.5%;
+  }
+}
+
+// discovery{
+.discovery {
+  background-color: $color-gray;
+  padding: 60px 0;
+
+  &__inner {
+    @include inner();
+  }
+
+  &__list {
+    @include flex();
+  }
+
+  &__item {
+    width: 30%;
+  }
+}
+
+.card {
+  &__body {
+    background-color: #fff;
+    margin-top: 8px;
+    padding: 35px;
+  }
+
+  &__title {
+    color: $color-heading;
+  }
+
+  &__btn.btn {
+    margin-left: auto;
+    margin-top: 30px;
+  }
+}
+
+// btn
+.btn {
+  background-color: $color-accent;
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 40px;
+  text-decoration: none;
+  width: 160px;
+}
+
+// footer
+.footer {
+  background-color: $color-text;
+  &__inner {
+    @include inner();
+  }
+
+  &__text {
+    color: #cbd0d3;
+    font-size: 12px;
+    padding: 100px 0 40px;
+  }
+}

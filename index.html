@@ -7,18 +7,111 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>newslly-BEM</title>
    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-   <link rel="stylesheet" href="/css/style.css">
+   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-   <header>
-      <h1><img src="" alt=""></h1>
+   <header class="header">
+      <div class="header__inner">
+         <h1 class="header__logo"><img src="images/img_logo.png" alt="Newslly"></h1>
+         <nav class="g-nav">
+            <ul class="g-nav__list">
+               <li class="g-nav__item"><a class="g-nav__link" href="index.html">HOME</a></li>
+               <li class="g-nav__item"><a class="g-nav__link" href="discovery.html">DISCOVERY</a></li>
+               <li class="g-nav__item"><a class="g-nav__link" href="#">PHOTOS</a></li>
+               <li class="g-nav__item"><a class="g-nav__link" href="#">CONTACT</a></li>
+            </ul>
+         </nav>
+      </div>
    </header>
    <main>
+      <section class="news">
+         <div class="news__inner">
+            <h2 class="title-main">MORE NEWS</h2>
+            <div class="news__list">
+               <div class="page">
+                  <p class="page__category">TRAVEL</p>
+                  <h3 class="page__subtitle">Subtitle</h3>
+                  <p class="page__text">
+                     Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam
+                     detracto, vidit vituperatoribus duo id. Affert detraxit
+                     voluptatum vis eu, inermis eloquentiam.
+                  </p>
+                  <img class="page__time" src="images/icon_time.png" alt="">
+                  <small class="page__date">2m ago</small>
+               </div>
+               <div class="page">
+                  <p class="page__category">TRAVEL</p>
+                  <h3 class="page__subtitle">Subtitle</h3>
+                  <p class="page__text">
+                     Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam
+                     detracto, vidit vituperatoribus duo id. Affert detraxit
+                     voluptatum vis eu, inermis eloquentiam.
+                  </p>
+                  <img class="page__time" src="images/icon_time.png" alt="">
+                  <small class="page__date">2m ago</small>
+               </div>
+               <div class="page">
+                  <p class="page__category">TRAVEL</p>
+                  <h3 class="page__subtitle">Subtitle</h3>
+                  <p class="page__text">
+                     Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam
+                     detracto, vidit vituperatoribus duo id. Affert detraxit
+                     voluptatum vis eu, inermis eloquentiam.
+                  </p>
+                  <img class="page__time" src="images/icon_time.png" alt="">
+                  <small class="page__date">2m ago</small>
+               </div>
+               <div class="page">
+                  <p class="page__category">TRAVEL</p>
+                  <h3 class="page__subtitle">Subtitle</h3>
+                  <p class="page__text">
+                     Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam
+                     detracto, vidit vituperatoribus duo id. Affert detraxit
+                     voluptatum vis eu, inermis eloquentiam.
+                  </p>
+                  <img class="page__time" src="images/icon_time.png" alt="">
+                  <small class="page__date">2m ago</small>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="trending">
+         <div class="trending__inner">
+            <h2 class="title-main">TRENDING</h2>
+            <div class="trending__list">
+               <article class="trending__item card">
+                  <img src="images/pic_trending01.png" alt="">
+                  <div class="card__body">
+                     <h3 class="card__title">Dolore magna aliqua</h3>
+                     <p class="card__text">
+                        Lorem ipsum dolor sit amet, ipsum labitur lucilius
+                        mel id, ad has appareat.</p>
+                     <a class="card__btn btn" href="#">READ MORE</a>
+                  </div>
+               </article>
+
+               <article class="trending__item card">
+                  <img src="images/pic_trending02.png" alt="">
+                  <div class="card__body">
+                     <h3 class="card__title">Dolore magna aliqua</h3>
+                     <p class="card__text">Lorem ipsum dolor sit amet, ipsum labitur lucilius
+                        mel id, ad has appareat.</p>
+                     <a class="card__btn btn" href="#">READ MORE</a>
+                  </div>
+               </article>
+            </div>
+         </div>
+      </section>
 
    </main>
-   <footer>
-
+   <footer class="footer">
+      <div class="footer__inner">
+         <p class="footer__text">
+            TRIDENT college All Rights Reserved.
+         </p>
+      </div>
    </footer>
 </body>
 
